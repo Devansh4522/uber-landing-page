@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            height: 64px;
+            background-color: black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .navin {
+            height: 40px;
+            width: 1408px;
+
+            display: flex;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: white;
+            margin-left: 60px;
+            align-self: center;
+            font-size: 24px;
+        }
+
+        .navin1 {
+            height: 40px;
+            width: 840px;
+
+            margin-left: 10px;
+            display: flex;
+        }
+
+        .navin2 {
+            height: 40px;
+            width: 360.112px;
+
+            margin-left: 10px;
+            display: flex;
+        }
+
+
+        .navs {
+            color: white;
+            height: 38px;
+            padding: 10px 12px 10px 12px;
+            border-radius: 30px;
+            margin-left: 10px;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navs:hover {
+            background-color: rgb(68, 68, 68);
+        }
+
+        .navs p {
+            padding-right: 3px;
+            font-weight: 500;
+        }
+
+        .navs img {
+            padding-right: 15px;
+        }
+
+        .icon {
+            height: 16px;
+        }
+
+        .su {
+            height: 100%;
+            width: 73px;
+            padding: 10px 12px 10px 12px;
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 30px;
+        }
+
+        .back {
+            height: 643.8px;
+            width: 100%;
+            background-image: url(back1.png);
+            background-size: cover;
+        }
+
+        .section {
+            height: 120px;
+            width: 576px;
+            background-color: rgb(255, 255, 255);
+            border: 0.5px solid rgb(229, 229, 229);
+            position: relative;
+            top: 62px;
+            left: 183px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .icons {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .icons:hover {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 2px solid black;
+        }
+
+        .icons img {
+            width: 25px;
+            height: 25px;
+            align-self: center;
+        }
+
+        .icons p {
+            width: 80px;
+            text-align: center;
+
+        }
+
+        .input {
+            height: 395px;
+            width: 578px;
+            position: relative;
+            top: 62.7px;
+            left: 183px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input h1 {
+            font-size: 55px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .input input {
+            height: 52px;
+            width: 480px;
+            border: none;
+            background-color: rgb(245, 245, 245);
+            margin-top: 10px;
+        }
+
+        .submit {
+            height: 79px;
+            width: 480px;
+
+        }
+
+        .req {
+            height: 48px;
+            width: 146px;
+            border: none;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .sfl {
+            height: 48px;
+            width: 146px;
+            border: none;
+            background-color: #eeeeee;
+            color: black;
+            font-weight: 500;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+        .gstarted {
+            height: 300px;
+            background-image: url(gsimage.jpg);
+            background-size: cover;
+            background-position: 4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .in {
+            height: 172px;
+            width: 1152px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .in h2 {
+            font-size: 35px;
+        }
+
+        .rwu {
+            height: 512px;
+            width: 1152px;
+            padding: 64px;
+            margin: auto;
+        }
+
+        .rwu p {
+            font-size: 36px;
+            margin-bottom: 28px;
+        }
+
+        .ruSection {
+            height: 198px;
+            width: 558px;
+
+            box-sizing: border-box;
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .ruSectionimg {
+            height: 150px;
+            width: 150px;
+        }
+
+        .con {
+            height: 150px;
+            width: 312px;
+            padding: 24px 48px 24px 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .heading {
+            height: 32px;
+            width: 312px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .content {
+            height: 72px;
+            width: 312px;
+            font-size: 16px;
+            line-height: 24px;
+
+        }
+
+        .rarrow {
+            height: 25px;
+            width: 25px;
+            position: absolute;
+            top: 88px;
+            left: 332px;
+        }
+
+        .more {
+            height: 612px;
+            width: 1152px;
+            padding-left: 24px 48px 24px 48px;
+            margin: auto;
+        }
+
+        .more h2 {
+            font-size: 36px;
+            margin-bottom: 28px;
+        }
+
+        .pcontent {
+            height: 540px;
+            width: 558px;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .pcontent img {
+            height: 372px;
+            width: 558px;
+        }
+
+
+        .con2 {
+            height: 148px;
+            width: 558px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .head1 {
+            height: 24px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .text1 {
+            height: 48px;
+            font-size: 16px;
+            line-height: 20px;
+
+        }
+
+        .links {
+            height: 44px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .link {
+            height: auto;
+            width: fit-content;
+            padding: 5px 20px 0px 0px;
+        }
+
+        .aboutSection {
+            height: 192px;
+            width: 1152px;
+            padding: 64px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .sec {
+            height: 192px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .imgicon {
+            height: 24px;
+            width: 24px;
+        }
+
+        .secCon {
+            height: 148px;
+            width: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .otherapps {
+            height: 407.6px;
+            width: 100%;
+            background-color: rgb(221, 221, 221);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .otherappsin {
+            height: 279.6px;
+            width: 1152px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .otherappsin h2 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .appsout {
+            height: 198px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .apps {
+            height: 198px;
+            width: 556.4px;
+            background-color: white;
+            display: inline-flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 0.5px solid rgb(187, 187, 187);
+        }
+
+
+
+        .apps img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .appsin {
+            height: 150px;
+            width: 274.225px;
+            padding: 24px 48px 24px 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .appsin h2 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .signup {
+            height: 212.8px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signupin {
+            height: 84.8px;
+            width: 1152px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .suDR {
+            height: 100%;
+            width: 558px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .suDR img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .name {
+            height: 44px;
+            width: max-content;
+
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        .iconarrow {
+            height: 44px;
+            width: 100px;
+            border: 1px solid black;
+        }
+
+        footer {
+            height: 953.5px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+
+        .footerin {
+            width: 1152px;
+            height: 825.562px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footerheading {
+            height: 178.8px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        .Uber {
+            font-size: 24px;
+        }
+
+        .footersection {
+            height: 332px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footersection ul {
+            height: 100%;
+            width: 261px;
+            color: white;
+            font-size: 16px;
+            line-height: 35px;
+            list-style: none;
+        }
+        .footersection ul li:hover {
+         color: #afafaf;
+        }
+
+        .footersection ul p {
+            font-size: 20px;
+        }
+
+
+        .footerlinks {
+            height: 162.76px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footerlinksin1 {
+            height: 72px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .smedia {
+            width: 552px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .smedia img {
+            height: 18px;
+            width: 18px;
+        }
+
+        .smedia1 {
+            height: 48px;
+            width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 60px;
+            border-radius: 5px;
+        }
+
+        .smedia1:hover {
+            background-color: rgb(43, 43, 43);
+            border-radius: 5px;
+        }
+
+        .location {
+            width: 552px;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .langplace{
+            height: 36px;
+            background-color: rgb(0, 0, 0);
+            width: max-content;
+            padding: 0px 12px 0px 12px;
+            color: white;
+            border-radius: 5px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-right: 10px;
+        }
+        .langplace:hover{
+            background-color: rgb(46, 46, 46);
+        }
+        .langplace img{
+            height: 16px;
+            width: 16px;
+            padding-right: 10px;
+        }
+
+        .footerlinksin2 {
+            height: 55px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .playstore{
+            height:37.925px;
+            width: 128px;
+            display: inline;
+            margin-left: 5px;
+
+        }
+        .appstore{
+            height:42.7625px;
+            width: 128px;
+            display: inline;
+            margin-left: 10px;
+
+        }
+        
+        .footerfoot {
+            height: 44px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        .footpart1{
+            height: 100%;
+            width: 261px;
+            color: #afafaf;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .footpart2{
+            height: 100%;
+            width: 261px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .footpart2 p{
+          display: inline;
+          margin-right: 10px;
+          font-size: 14px;
+          color: #afafaf;
+        }
+        .footpart2 p:hover{
+          color: #565656;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <div class="navin">
+                <p class="logo">
+                    Uber
+                </p>
+                <div class="navin1">
+                    <button class="navs">
+                        <p>Company </p><img src="down.png" alt="">
+                    </button>
+                    <button class="navs">
+                        <p>Safety </p>
+                    </button>
+                    <button class="navs">
+                        <p>Help </p>
+                    </button>
+                </div>
+                <div class="navin2">
+                    <button class="navs"><img class="icon" src="world.png" alt="">
+                        <p>EN </p>
+                    </button>
+                    <button class="navs"><img class="icon" src="menu.png" alt="">
+                        <p>Products </p>
+                    </button>
+                    <button class="navs">
+                        <p>Log in</p>
+                    </button>
+                    <button class="su">
+                        <p>Sign up</p>
+                    </button>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="back">
+            <div class="section">
+                <div class="icons"> <img src="car.png" alt="">
+                    <p>Ride</p>
+                </div>
+                <div class="icons"><img src="network.png" alt="">
+                    <p>Drive or deliver</p>
+                </div>
+                <div class="icons"><img src="key.png" alt="">
+                    <p>Rent your fleet</p>
+                </div>
+            </div>
+            <div class="input">
+                <h1>Request a ride now</h1>
+                <input type="text" placeholder="      Enter pickup location">
+                <input type="text" placeholder="      Enter destination">
+                <div class="submit">
+                    <button class="req">Request Now</button>
+                    <button class="sfl">Schedule for later</button>
+                </div>
+            </div>
+        </div>
+        <div class="gstarted">
+            <div class="in">
+                <h2>The Uber you know, reimagined for business</h2>
+                <p>A platform for managing global rides and meals, and local deliveries, for companies of any size.</p>
+                <button class="req">Get started</button>
+            </div>
+        </div>
+        <div class="rwu">
+            <p>Ride with Uber</p>
+            <div class="ruSection"><img class="ruSectionimg" src="auto.webp" alt="">
+                <div class="con">
+                    <div class="heading">Uber Auto</div>
+                    <div class="content">Get affordable Uber Auto rides with no haggling. Request Uber Auto and ride
+                        comfortably around your city.</div>
+                    <img src="rarrow.png" alt="" class="rarrow">
+                </div>
+            </div>
+            <div class="ruSection"><img class="ruSectionimg" src="bike.webp" alt="">
+                <div class="con">
+                    <div class="heading">Uber Moto</div>
+                    <div class="content">Get affordable bike rides at your doorstep. Skip the crowd and zip through
+                        traffic with Uber Moto.</div>
+                    <img src="rarrow.png" alt="" class="rarrow">
+                </div>
+            </div>
+            <div class="ruSection"><img class="ruSectionimg" src="car clock.webp" alt="">
+                <div class="con">
+                    <div class="heading">Uber Rentals</div>
+                    <div class="content">Book Rentals to save time with one car and driver for your multi-stop trips.
+                    </div>
+                    <img src="rarrow.png" alt="" class="rarrow">
+                </div>
+            </div>
+            <div class="ruSection"><img class="ruSectionimg" src="car battery.webp" alt="">
+                <div class="con">
+                    <div class="heading">Uber Intercity</div>
+                    <div class="content">Book Intercity to head outstation anytime in convienient and affordable cars.
+                    </div>
+                    <img src="rarrow.png" alt="" class="rarrow">
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <h2>Focused on safety, wherever you go</h2>
+            <div class="pcontent"><img src="driver.webp" alt="">
+                <div class="con2">
+                    <div class="head1">Our commitment to your safety</div>
+                    <div class="text1">With every safety feature and every standard in our Community Guidelines, we're
+                        committed to helping to create a safe environment for our users</div>
+                    <div class="links">
+                        <div class="link">
+                            <p>Read about our Community Guidelines</p>
+                        </div>
+                        <div class="link">
+                            <p>See all safety features</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pcontent"><img src="road.webp" alt="">
+                <div class="con2">
+                    <div class="head1">Setting 10,000+ cities in motion</div>
+                    <div class="text1">The app is available in thousands of cities worldwide, so you can request a ride
+                        even when you’re far from home.</div>
+                    <div class="links">
+                        <div class="link">
+                            <p>View all cities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutSection">
+            <div class="sec">
+                <img class="imgicon" src="people.png" alt="">
+                <div class="secCon">
+                    <div class="head1">About us</div>
+                    <div class="text1">Find out how we started, what drives us, and how we’re reimagining how the world
+                        moves.</div>
+                    <div class="links">
+                        <div class="link">
+                            <p>Learn more about Uber</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec">
+                <img class="imgicon" src="doc.png" alt="">
+                <div class="secCon">
+                    <div class="head1">Newsroom</div>
+                    <div class="text1">See announcements about our latest releases, initiatives, and partnerships.</div>
+                    <div class="links">
+                        <div class="link">
+                            <p>Go to Newsroom</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec">
+                <img class="imgicon" src="home.png" alt="">
+                <div class="secCon">
+                    <div class="head1">Global citizenship</div>
+                    <div class="text1">Read about our commitment to making a positive impact in the cities we serve.
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <p>See our partnerships</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="otherapps">
+            <div class="otherappsin">
+                <h2>There’s more to love in the apps</h2>
+                <div class="appsout">
+                    <div class="apps">
+                        <img src="Driver-App-logo.webp" alt="">
+                        <div class="appsin">
+                            <h2>Download the driver app</h2>
+                        </div>
+                    </div>
+                    <div class="apps"><img src="Rider-App-logo.webp" alt="">
+                        <div class="appsin">
+                            <h2>Download the Uber app</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="signup">
+            <div class="signupin">
+                <div class="suDR">
+                    <div class="name">Sign up to drive</div>
+                    <img src="rarrow.png" alt="">
+                </div>
+                <div class="suDR">
+                    <div class="name">Sign up to ride</div>
+                    <img src="rarrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerin">
+            <div class="footerheading">
+                <p class="Uber">Uber</p>
+                <p>Visit Help Center</p>
+            </div>
+            <div class="footersection">
+                <ul>
+                    <p>Company</p>
+                    <li>Our offerings</li>
+                    <li>Newsroom</li>
+                    <li>Investors</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>AI</li>
+                    <li>Gift cards</li>
+                </ul>
+                <ul>
+                    <p>Products</p>
+                    <li>Ride</li>
+                    <li>Drive</li>
+                    <li>Deliver</li>
+                    <li>Eat</li>
+                    <li>Uber for Business</li>
+                    <li>Uber Freight</li>
+                </ul>
+                <ul>
+                    <p>Global Citizenship</p>
+                    <li>Safety</li>
+                    <li>Diversity and Inclusion</li>
+                    <li>Sustainability</li>
+                </ul>
+                <ul>
+                    <p>Travel</p>
+                    <li>Airports</li>
+                    <li>Cities</li>
+                </ul>
+            </div>
+            <div class="footerlinks">
+                <div class="footerlinksin1">
+                    <div class="smedia">
+                        <div class="smedia1"><img src="facebook.png" alt=""></div>
+                        <div class="smedia1"><img src="twitter.png" alt=""></div>
+                        <div class="smedia1"><img src="youtube.png" alt=""></div>
+                        <div class="smedia1"><img src="instagram.png" alt=""></div>
+                    </div>
+                    <div class="location">
+                        <div class="langplace"><img src="world.png" alt=""><p>English</p></div>
+                        <div class="langplace"><img src="world.png" alt=""><p>Dehradun</p></div>
+                    </div>
+                </div>
+                <div class="footerlinksin2">
+                    <img class="playstore" src="playstore.svg" alt="">
+                    <img class="appstore" src="appstore.svg" alt="">
+                </div>
+            </div>
+            <div class="footerfoot">
+                <div class="footpart1">© 2023 Uber Technologies Inc.</div>
+                <div class="footpart2"><p>privary</p>
+                <p>Accessibility</p>
+            <p>Terms</p></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
